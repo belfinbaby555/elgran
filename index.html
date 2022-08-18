@@ -14,9 +14,9 @@
         </div>
         <div class="ham" id="ham3">
             <button class="close" onclick="hamclose()">&times;</button><br><br><br><br>
-            <a href="" class="b">Home</a><br><br><br>
-            <a href="" class="b">Help</a><br><br><br>
-            <a href="" class="b">What's New</a><br><br><br>
+            <a href="test.html" id="b" class="back">Home</a><br><br>
+            <a href="" id="b" class="back">Help</a><br><br>
+            <a href="" id="b" class="back">What's New</a>
         </div>
         <div class="header-box" id="header-box">
             <h1>Worlds Best YouTube Converter</h1>
@@ -79,12 +79,12 @@
         <div class="footer"></div>
         <script>
             function hamopen(){
-                document.getElementById("ham3").style.height="70%";
-                document.getElementById("ham3").style.opacity="1";
+                
+                document.getElementById("ham3").style.display="inherit";
+
             }
             function hamclose(){
-                document.getElementById("ham3").style.height="0px";
-                document.getElementById("ham3").style.opacity="0";
+                document.getElementById("ham3").style.display="none";
             }
         </script>
     </body>
